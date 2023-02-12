@@ -23,4 +23,6 @@ gba emulator was taken from [browncha023's github](https://github.com/Browncha02
 2048 was taken from [Gabriele Cirulli's github](https://github.com/gabrielecirulli/2048), 2048 AI taken from [ovolve's github](https://github.com/ovolve/2048-AI)<br>
 tetris was taken from [sandywalker's github](https://github.com/sandywalker/Tetris) (made very small decoration changes) <br>
 wordle was taken from [wordleunlimited.org](https://wordleunlimited.org/)
+
+
 ###pls dont sue me
