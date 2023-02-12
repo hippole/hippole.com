@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tetris</title>
+
+    <link rel="icon" href="https://raw.githubusercontent.com/hippole/hippole.github.io/main/tetris/tetris.png">
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7QSMJNTNV2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-7QSMJNTNV2');
+</script>
+<div id="tetris">
+	<canvas id="scene"></canvas>
+	<div id="gameOver">
+		<h1>Game Over!</h1>
+		<h3>Score: <span id="finalScore">0</span></h3>
+		<h2><a href="https://hippole.com/tetris" id="restart">Restart</a></h2>
+		
+	</div>
+	<div id="side">
+		<div id="info">
+			<h1 id="levelInfo">Level:<br><span id="level">1</span></h1>
+			<h2 id="scoreInfo">Score:<br><span id="score">0</span></h2>
+			<div id="rewardInfo" class="invisible">+<span id="reward">0</span></div>
+			<h5 style="color: gold; font-size: 20px; margin-bottom: 0px; margin-top: 0px; margin-right: 10px; margin-left: 10px;">Next Up:</h5>
+               		<canvas id="preview"></canvas>
+			<h4>:D</h4>
+
+		</div>
+	</div>
+</div>
+
+
+</body>
+<script src="dist/tetris.js"></script>
+<script>
+	(function(){
+		var tetris = new Tetris('tetris');
+		tetris.start();
+		//thanks stackoverflow
+		audio = new Audio('tetris.mp3'); 
+		audio.addEventListener('ended', function() {
+		    this.currentTime = 0;
+		    this.play();
+		}, false);
+		audio.play();
+	})();
+</script>
+</html>

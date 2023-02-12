@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="sadmac.png">
+        <title>Invalid Game Request!</title>
+        <style>
+            body {
+                background-color: coral;
+            }
+            p {
+                text-align: center;
+                color: white;
+                font-size: 64px;
+                font-family: "Lucida Console", monospace; 
+            }
+            .center {
+		justify-content: center;
+  		text-align: center;
+            }
+            
+            button {
+             font-family: "Lucida Console", monospace; 
+             position: relative;
+             border: none;
+	     padding: 0;
+             background: transparent;
+             cursor: pointer;
+             outline-offset: 4px;
+             transition: filter 250ms;
+             user-select: none;
+             touch-action: manipulation;
+            }
+
+            .shadow {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             border-radius: 12px;
+             background: hsl(0deg 0% 0% / 0.25);
+             will-change: transform;
+             transform: translateY(2px);
+             transition: transform
+                600ms
+                cubic-bezier(.3, .7, .4, 1);
+            }
+
+            .edge {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             border-radius: 12px;
+             background: linear-gradient(
+                to left,
+                hsl(340deg 100% 16%) 0%,
+                hsl(340deg 100% 32%) 8%,
+                hsl(340deg 100% 32%) 92%,
+                hsl(340deg 100% 16%) 100%
+              );
+            }
+
+            .front {
+             display: block;
+             position: relative;
+             padding: 12px 27px;
+             border-radius: 12px;
+             font-size: 1.1rem;
+             color: white;
+             background: hsl(345deg 100% 47%);
+             will-change: transform;
+             transform: translateY(-4px);
+             transition: transform
+                600ms
+                cubic-bezier(.3, .7, .4, 1);
+            }
+
+            button:hover {
+             filter: brightness(110%);
+            }
+
+            button:hover .front {
+             transform: translateY(-6px);
+             transition: transform
+                250ms
+                cubic-bezier(.3, .7, .4, 1.5);
+            }
+
+            button:active .front {
+             transform: translateY(-2px);
+             transition: transform 34ms;
+            }
+
+            button:hover .shadow {
+             transform: translateY(4px);
+             transition: transform
+                250ms
+                cubic-bezier(.3, .7, .4, 1.5);
+            }
+
+            button:active .shadow {
+             transform: translateY(1px);
+             transition: transform 34ms;
+            }
+
+            button:focus:not(:focus-visible) {
+             outline: none;
+            }
+        </style>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QSMJNTNV2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7QSMJNTNV2');
+    </script>
+    <body>
+    <div class="center">
+    <img src="sadmac.png" alt="Very sad mac D:">
+    <p>Uh oh!<br>Invalid Game Request!</p>
+    <button onclick="window.location.href='https://hippole.com/gba'">
+		  <span class="shadow"></span>
+		  <span class="edge"></span>
+		  <span class="front text"> Try again </span>
+		</button>
+	  </div>
+    </body>
+</html>
