@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@vercel/analytics": "^0.1.6",
+    "vercel": "28.11.1"
+  },
+  "name": "webosu-main",
+  "description": "Feel free to drop by the [Discord server](https://discord.gg/v7wBtSdYzx)<br>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server -c-1"
+  },
+  "author": "",
+  "license": "ISC"
+}

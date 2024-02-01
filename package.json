@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "firebase": "^9.17.1"
-  }
+  },
+  "name": "hippole.com",
+  "description": "<img src=\"https://img.shields.io/badge/version-1.0-critical\"/> <img src=\"https://img.shields.io/badge/games-4-orange\"/> <img src=\"https://img.shields.io/badge/school-yes-yellow\"/>\r # educational games 100% no baseball hat <img src=\"https://img.shields.io/badge/epic-hippo-9cf?style=for-the-badge&logo=appveyor\"/>\r made for epic education 100%\r ## list of games\r - [x] Cookie Clicker\r - [x] A whole list of Game Boy Advance games\r - [x] 2048\r - [x] Tetris\r - [x] Wordle Unlimited\r - [ ] Nothing here, Be the first to suggest\r - [ ] Nothing here, Be the first to suggest\r - [ ] Nothing here, Be the first to suggest\r - [ ] Nothing here, Be the first to suggest\r ## hosting\r fork this project and then either host it with a different provider or host with github pages <br>\r for github pages just like go to settings then pages and whatever\r ## contributing\r ha ha ha **no** <br>\r ok maybe\r ## credits\r cookie clicker was taken from [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/)'s source code (original author: Orteil) <br>\r gba emulator was taken from [browncha023's github](https://github.com/Browncha023/GBA) (made very minor decoration changes) <br>\r 2048 was taken from [Gabriele Cirulli's github](https://github.com/gabrielecirulli/2048), 2048 AI taken from [ovolve's github](https://github.com/ovolve/2048-AI)<br>\r tetris was taken from [sandywalker's github](https://github.com/sandywalker/Tetris) (made very small decoration changes) <br>\r wordle was taken from [wordleunlimited.org](https://wordleunlimited.org/)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
